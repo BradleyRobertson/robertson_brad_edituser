@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 02, 2018 at 02:30 PM
+-- Generation Time: Mar 02, 2018 at 07:23 PM
 -- Server version: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -1062,20 +1062,24 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
   `user_name` varchar(250) NOT NULL,
   `user_pass` varchar(250) NOT NULL,
   `user_email` varchar(250) NOT NULL,
-  `user_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `user_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `user_lvl` tinyint(2) NOT NULL,
   `user_ip` varchar(50) NOT NULL DEFAULT 'no',
+  `tbl_firstlogin` int(2) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_lvl`, `user_ip`) VALUES
-(1, 'joe', 'joe kormendi', '1234567', 'joe@joe.ca', '2018-03-01 23:44:44', 0, '::1'),
-(4, 'justin', 'Justin brunner', '123456789', 'Justin@justin.ca', '2018-03-02 00:21:44', 1, '::1'),
-(5, 'joe', 'joe kormendi', '1234567', 'joe@joe.ca', '2018-03-02 00:21:44', 0, 'no');
+INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_lvl`, `user_ip`, `tbl_firstlogin`) VALUES
+(1, 'joe', 'joe kormendi', '1234567', 'joe@joe.ca', '2018-03-01 23:44:44', 0, '::1', NULL),
+(4, 'justin', 'Justin brunner', '123456789', 'Justin@justin.ca', '2018-03-02 00:21:44', 1, '::1', NULL),
+(9, 'Master', 'MasterUser', 'TheMaster', 'Master@master.ca', '2018-03-02 16:17:17', 1, '::1', NULL),
+(10, 'Ross', 'RossO', 'Rossan', 'Ross@gmail.com', NULL, 2, 'no', NULL),
+(11, 'jimmy', 'bagingie1', 'bagongo', 'bozo@gmail.ca', NULL, 2, '::1', NULL),
+(13, 'How', 'about', 'now', 'then', NULL, 2, 'no', NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
