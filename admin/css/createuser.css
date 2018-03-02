@@ -1,4 +1,12 @@
-body {
+
+/* create user portion */
+
+
+
+
+/* create user portion */
+
+body{
   background-color: black;
   color: white;
 }
@@ -6,7 +14,6 @@ body {
 h2 {
   margin-left: 43.5%;
   margin-top: 6%;
-  margin-bottom: 4%;
 }
 
 form {
@@ -37,18 +44,28 @@ input {
 }
 
 .submit {
-	margin-left: 38%;
-	border-radius: 5px;
-	margin-bottom: 80px;
-	background-color: grey;
-	color: white;
-	font-family: 'Slabo 27px', serif;
-	font-size: 18px;
-	padding-left: 40px;
-	padding-right: 40px;
-	box-shadow: 0px 0px 10px 3px #ffffff;
+  background-color: black;
+  color: white;
+  height: 30px;
+  font-size: inherit;
+  text-align: center;
+  margin-left: 12%;
+  margin-top: 5%;
 }
 
-button {
-margin-left: 50%
-}
+/*login portion */
+
+
+
+
+/*login portion */
+
+
+
+
+/*edit user portion */
+
+
+
+
+/*edit user portion */
