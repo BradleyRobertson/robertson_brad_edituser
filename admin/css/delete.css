@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+h2 {
+  margin-left: 38%;
+  margin-top: 6%;
+  margin-bottom: 4%;
+  font-family: Oswald;
+  font-size: 28px;
+}
+
+.deletos{
+  margin-left: 44.8%;
+  font-size: 20px;
+}
+
+a {
+  color: red;
+}
