@@ -19,7 +19,7 @@
 	function editUser($id, $fname, $username, $password, $email) {
 		include('connect.php');
 
-		$updatestring = "UPDATE tbl_user SET user_fname='{$fname}', user_name='{$username}', user_pass='{$password}', user_email='{$email}' WHERE user_id={$id}";
+		$updatestring = "UPDATE tbl_user SET user_fname='{$fname}', user_name='{$username}', user_pass='{$password}', user_email='{$email}', tbl_firstlogin=1 WHERE user_id={$id}";
 		$updatequery = mysqli_query($link, $updatestring);
 
 		if($updatequery) {

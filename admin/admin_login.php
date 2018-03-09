@@ -13,20 +13,22 @@
 			$message = "Please fill out the required fields.";
 		}
 
-	//	$firstlogin = "SELECT tbl_firstlogin FROM tbl_user WHERE user=$user";
 
-		//$result = mysql_query($checkvisits);
-		//if($result <= "NULL" {
-		//redirect_to("admin_edituser.php");
+
+	// $firstlogin = "SELECT tbl_firstlogin FROM tbl_user";
+
+//	$logged = mysqli_query($logone);
+	//	if($result <= "NULL" {
+	//	redirect_to("admin_edituser.php");
 		//}else{
-		//	echo "the redirect on login failed!";
+		//echo "the redirect on login failed!";
 	}
 ?>
 <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome to your admin panel login</title>
+<title>Admin panel login</title>
 <link rel="stylesheet" href="./css/login.css">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">

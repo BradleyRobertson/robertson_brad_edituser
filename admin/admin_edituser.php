@@ -17,12 +17,15 @@
 		$result = editUser($id, $fname, $username, $password, $email);
 		$message = $result;
 	}
+
 ?>
 <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="./css/editUser.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 <title>Edit User</title>
 </head>
 <body>
